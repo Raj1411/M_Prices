@@ -28,7 +28,7 @@ def myntra_price(style_id):
 def main():
     st.title("Myntra Price Tracker")
 
-    style_ids = ['15580238']  # Add more Style IDs as needed
+    style_ids = ['15580238','15580024']  # Add more Style IDs as needed
     
     for style_id in style_ids:
         price = myntra_price(style_id)
