@@ -40,4 +40,4 @@ def myntra_price(style_id):
 
 if __name__ == "__main__":
     # main()
-    myntra_price()
+    myntra_price('15580238')
