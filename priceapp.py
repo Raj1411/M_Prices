@@ -39,4 +39,5 @@ def myntra_price(style_id):
 #         st.success(f"Myntra Price for Style ID {style_id}: {price}")
 
 if __name__ == "__main__":
-    main()
+    # main()
+    myntra_price()
