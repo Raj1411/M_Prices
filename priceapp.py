@@ -1,9 +1,9 @@
-
 import streamlit as st
 from bs4 import BeautifulSoup
 import json
 import requests as rq
 from datetime import datetime
+from time import sleep
 
 headerss = {
     "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36"
@@ -20,6 +20,7 @@ def myntra_price(style_id):
                 break
         aa = json.loads(script[script.index('{'):])
         price_look_4 = aa['pdpData']['selectedSeller']['discountedPrice']
+        sleep(1)
         return price_look_4
     except:
         return 'OOS'
