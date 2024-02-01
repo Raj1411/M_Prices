@@ -19,8 +19,9 @@ def myntra_price(style_id):
                 script = s.get_text(strip=True)
                 break
         aa = json.loads(script[script.index('{'):])
+        st.write(aa)
         price_look_4 = aa['pdpData']['selectedSeller']['discountedPrice']
-        sleep(1)
+        st.write(price_look_4)
         return price_look_4
     except:
         return 'OOS'
