@@ -14,6 +14,8 @@ def myntra_price(style_id):
         res_4 = rq.Session().get(f'https://www.myntra.com/foundation-and-primer/swiss-beauty/swiss-beauty-long-lasting-makeup-fixer-natural-spray---aloe-vera-with-vitamin-e-50-ml/{style_id}/buy', headers=headerss)
         soup_4 = BeautifulSoup(res_4.text, 'lxml')
         st.write(soup_4)
+    except:
+        None
 #         script = None
 #         for s in soup_4.find_all("script"):
 #             if 'pdpData' in s.text:
